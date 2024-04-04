@@ -881,9 +881,10 @@
     <script>
         const handleWhatsAppClick = () => {
             const countryCode = "+971"; // Replace with the actual country code
-            const phoneNumber = "#";
-            const whatsappUrl = `https://wa.me/${countryCode}${phoneNumber}`;
-            window.location.href = whatsappUrl;
+            const phoneNumber = "26278677";
+            const message = "hii";
+            const whatsappUrl = `https://wa.me/${countryCode}${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         };
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
